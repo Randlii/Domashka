@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-int main()
+int main() // не работает на вижл, не копируйте пока!
 {
 	char s[100];
 	int i = 0, c = 0, d;
