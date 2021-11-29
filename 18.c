@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main()
+int main() // не работает на вижл, не копируйте пока
 {
 	char s[100];
 	char del[100];
