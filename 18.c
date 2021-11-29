@@ -19,6 +19,7 @@ int main()
 				for(int d = i -c -1; s[l];)
 					s[d++] = s[++l];
 				s[l] = '\0';
+				i = 0;
 			}
 			i++;
 			c++;
@@ -28,4 +29,6 @@ int main()
 
 	}
 	puts(s);
+	printf("\nСлово которое удалили: ");
+	puts(del);
 }
