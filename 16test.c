@@ -16,11 +16,9 @@ int main() // нихуя не робит! Ебанный русский язык
 	{
 		while(glas[l] != '\0')
 		{
-			l++;
-			k1 = strchr(&s[i], glas[l]);
-			printf("%d", k);
-			if(k != 0)
+			if(s[i] == glass[l])
 				c++;
+			l++;
 		}
 		l = 0;
 		if(s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u' || s[i] == 'y'  )
