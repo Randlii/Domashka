@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <string.h>
 #include <iostream>
-int main() 
+int main() // нихуя не робит! Ебанный русский язык!!!!1
 {
 	setlocale(LC_ALL, "Rus");
 	char s[100];
