@@ -27,7 +27,11 @@ int main()
 		c++;
 	}
 	s1[l][c] = '\0';
-	puts(*s1);
+	if(n1 >= l || n2 >= l )
+	{
+		printf("Сука!");
+		return 0;
+	}
 	for(int g = 0;g <= l;g++)
 	{
 		if(g == n1)
