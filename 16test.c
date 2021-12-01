@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
-int main()
+#include <iostream>
+int main() 
 {
+	setlocale(LC_ALL, "Rus");
 	char s[100];
 	char del[100];
 	int i = 0, c = 0, l =0, k = 0;
