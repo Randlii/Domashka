@@ -1,3 +1,5 @@
+#include <stdio.h>
+   
 int main()
 {
 	char s[100];
@@ -14,6 +16,8 @@ int main()
 	{
 		if(s[i] == ' ')
 		{
+			
+			s1[l][c] = '\0';
 			l++;
 			i++;
 			c =0;
@@ -22,9 +26,20 @@ int main()
 		i++;
 		c++;
 	}
+	s1[l][c] = '\0';
 	puts(*s1);
-	for(int g = 0, f=0;g <= l;g++, f++)
+	for(int g = 0;g <= l;g++)
 	{
-		printf("%s", *s1);
+		if(g == n1)
+		{
+			printf("%s ", s1[n2]);
+			g++;
+		}
+		if(g == n2)
+		{
+			printf("%s ", s1[n1]);
+			g++;
+		}
+		printf("%s ", s1[g]);
 	}
  }
