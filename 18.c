@@ -9,9 +9,9 @@ int main()
 	int i = 0, c = 0, d = 0, l = 0;
 
 	printf("Введите строку: ");
-	gets_s(s);
+	fgets(s, 100,stdin);
 	printf("Введите слово которое нужно удалить: ");
-	gets_s(del);
+	fgets(del, 100, stdin);
 	while (s[i] != '\0') {
 		while (s[i] == del[c])
 		{
@@ -19,7 +19,7 @@ int main()
 			{
 				d = i - c - 1;
 				l = i;
-				for (int d = i - c - 1; s[l] == '\0';)
+				for (int d = i - c - 1; s[l] != '\0';)
 					s[d++] = s[++l];
 				s[l] = '\0';
 				i = 0;
