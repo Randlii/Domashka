@@ -2,7 +2,7 @@
 
 void main() {
     setlocale(LC_ALL, "Rus");
-    double a, b, c,x,y a1, b1, c1;
+    double a, b, c,x,y, a1, b1, c1;
     printf("Введите коэффициенты a,b,c первого уравнения:\n");
     scanf_s("%lf %lf %lf", &a, &b, &c);
     printf("Введите коэффициенты a,b,c второго уравнения:\n");
