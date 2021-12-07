@@ -9,25 +9,29 @@ int factorial(int n)
 	return z;
 }
 
-void main() {
+int main() {
 	setlocale(LC_ALL, "Rus");
-	int eps, x, z = 1;
+	int eps; 
+	int x; 
+	int z = 1;
 	float s = 0;
 	printf("введите eps: ");
 	scanf_s("%d", &eps);
 	printf("введите х: ");
 	scanf_s("%d", &x);
 	if (eps <= 0)
-		return;
-	int znam = 1, x1 = х, t = x1;
-	float drob = x;
-	while (drob > eps)
+		return 0;
+	int zn = 1; 
+	int x1 = х; 
+	int t = x1;
+	float dr = x;
+	while (dr > eps)
 	{
-		s = s + z * drob;
+		s = s + z * dr;
 		z = -z;
-		znam = znam + 2;
+		zn = zn+ 2;
 		t = t * x1 * x1;
-		drob = t / factorial(znam);
+		dr = t / factorial(zn);
 
 	}
 	printf("%.3f", s);
